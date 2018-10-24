@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="AppEcommerce.Model.BoletoBancario" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BoletoBancario.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AppEcommerce.Model.CartaoDeCredito" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACAAAgAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>CartaoDeCredito.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AppEcommerce.Model.Cliente">
+    <Position X="1.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAgCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>Cliente.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AppEcommerce.Model.DescontoPessoaJuridica" Collapsed="true">
+    <Position X="8.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAIAAAE=</HashCode>
+      <FileName>DescontoPessoaJuridica.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AppEcommerce.Model.DescontoPessoaJuridicaUtilizado" Collapsed="true">
+    <Position X="10.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEAAAAAAAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DescontoPessoaJuridicaUtilizado.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AppEcommerce.Model.Endereco" Collapsed="true">
+    <Position X="5.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAACAAAAAARAAAIAAAAAgACAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Endereco.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AppEcommerce.Model.Frete" Collapsed="true">
+    <Position X="7" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAACAAAAEAA=</HashCode>
+      <FileName>Frete.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AppEcommerce.Model.ItemPedido" Collapsed="true">
+    <Position X="8.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAQAAAAAAE=</HashCode>
+      <FileName>ItemPedido.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AppEcommerce.Model.Pedido" Collapsed="true">
+    <Position X="10.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABCAAAAAAAAEAAAAAAAAAAAAAAAABAAAAAAAACAAAA=</HashCode>
+      <FileName>Pedido.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AppEcommerce.Model.PessoaFisica">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAACAAAIAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>PessoaFisica.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AppEcommerce.Model.PessoaJuridica">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAEAAAAAEAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PessoaJuridica.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AppEcommerce.Model.Produto" Collapsed="true">
+    <Position X="5.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAACBBAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>Produto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AppEcommerce.Model.Promocao" Collapsed="true">
+    <Position X="7" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAKAAAAAEABAAAAAAAAAAAAAACAAAAAAQAAAIAAAAA=</HashCode>
+      <FileName>Promocao.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AppEcommerce.Model.Telefone" Collapsed="true">
+    <Position X="8.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Telefone.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="AppEcommerce.Model.IFormaDePagamento" Collapsed="true">
+    <Position X="5.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IFormaDePagamento.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="AppEcommerce.Model.Enum.Sexo" Collapsed="true">
+    <Position X="5.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Sexo.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="AppEcommerce.Model.Enum.TipoFrete" Collapsed="true">
+    <Position X="7" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TipoFrete.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="AppEcommerce.Model.Enum.TipoTelefone" Collapsed="true">
+    <Position X="8.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAgAAgAAAAA=</HashCode>
+      <FileName>TipoTelefone.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
