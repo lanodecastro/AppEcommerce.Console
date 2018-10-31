@@ -21,5 +21,13 @@ namespace AppEcommerce.Model
             this.Peso = peso;
             this.Disponivel = true;
         }
+        public Produto(int id,string descricao, double preco, double peso,bool disponivel)
+        {
+            this.Id = id;
+            this.Descricao = descricao;
+            this.Preco = preco;
+            this.Peso = peso;
+            this.Disponivel = disponivel;
+        }
     }
 }

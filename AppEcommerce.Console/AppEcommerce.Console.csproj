@@ -11,6 +11,21 @@
     <AssemblyName>AppEcommerce.Console</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -33,6 +48,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -41,32 +57,58 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BoletoBancario.cs" />
-    <Compile Include="CartaoDeCredito.cs" />
-    <Compile Include="Cliente.cs" />
-    <Compile Include="DescontoPessoaJuridica.cs" />
-    <Compile Include="DescontoPessoaJuridicaUtilizado.cs" />
-    <Compile Include="Endereco.cs" />
-    <Compile Include="Frete.cs" />
-    <Compile Include="IFormaDePagamento.cs" />
-    <Compile Include="ItemPedido.cs" />
-    <Compile Include="Pedido.cs" />
-    <Compile Include="PessoaFisica.cs" />
-    <Compile Include="PessoaJuridica.cs" />
-    <Compile Include="Produto.cs" />
+    <Compile Include="Core\BoletoBancario.cs" />
+    <Compile Include="Core\CartaoDeCredito.cs" />
+    <Compile Include="Core\Cliente.cs" />
+    <Compile Include="Core\DescontoPessoaJuridica.cs" />
+    <Compile Include="Core\DescontoPessoaJuridicaUtilizado.cs" />
+    <Compile Include="Core\Endereco.cs" />
+    <Compile Include="Core\Frete.cs" />
+    <Compile Include="Core\IFormaDePagamento.cs" />
+    <Compile Include="Core\ItemPedido.cs" />
+    <Compile Include="Core\Pedido.cs" />
+    <Compile Include="Core\PessoaFisica.cs" />
+    <Compile Include="Core\PessoaJuridica.cs" />
+    <Compile Include="Core\Produto.cs" />
+    <Compile Include="Db\DbObject.cs" />
     <Compile Include="Program.cs" />
-    <Compile Include="Promocao.cs" />
+    <Compile Include="Core\Promocao.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Sexo.cs" />
-    <Compile Include="Telefone.cs" />
-    <Compile Include="TipoFrete.cs" />
-    <Compile Include="TipoTelefone.cs" />
+    <Compile Include="Core\Sexo.cs" />
+    <Compile Include="Core\Telefone.cs" />
+    <Compile Include="Core\TipoFrete.cs" />
+    <Compile Include="Core\TipoTelefone.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="ClassDiagram1.cd" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="bdEcommerce.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bdEcommerce_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>bdEcommerce.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
