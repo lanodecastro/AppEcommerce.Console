@@ -71,6 +71,8 @@
     <Compile Include="Core\PessoaJuridica.cs" />
     <Compile Include="Core\Produto.cs" />
     <Compile Include="Db\DbObject.cs" />
+    <Compile Include="Db\IDataAccesObject.cs" />
+    <Compile Include="Db\ProdutoDao.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Core\Promocao.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
