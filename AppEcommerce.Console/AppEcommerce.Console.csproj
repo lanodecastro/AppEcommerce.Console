@@ -57,26 +57,39 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Core\Aplicacao\CadastrarClientePF.cs" />
     <Compile Include="Core\BoletoBancario.cs" />
     <Compile Include="Core\CartaoDeCredito.cs" />
-    <Compile Include="Core\Cliente.cs" />
     <Compile Include="Core\DescontoPessoaJuridica.cs" />
     <Compile Include="Core\DescontoPessoaJuridicaUtilizado.cs" />
+    <Compile Include="Core\Dominio\Entidade\Cliente.cs" />
+    <Compile Include="Core\Dominio\Entidade\ItemPedido.cs" />
+    <Compile Include="Core\Dominio\Entidade\Pedido.cs" />
+    <Compile Include="Core\Dominio\Entidade\Produto.cs" />
+    <Compile Include="Core\Dominio\Repositorio\IClienteRepositorio.cs" />
+    <Compile Include="Core\Dominio\Repositorio\IPedidoRepositorio.cs" />
+    <Compile Include="Core\Dominio\Repositorio\IProdutoRepositorio.cs" />
+    <Compile Include="Core\Dominio\Repositorio\IRepositorio.cs" />
+    <Compile Include="Core\Dominio\Servico\IAtualizarEstoqueService.cs" />
+    <Compile Include="Core\Dominio\Servico\ICalcularFreteService.cs" />
+    <Compile Include="Core\Dominio\Servico\IRegistrarPedidoService.cs" />
+    <Compile Include="Core\Dominio\Servico\ISolicitarEntregaService.cs" />
+    <Compile Include="Core\Aplicacao\RegistrarPedidoService.cs" />
+    <Compile Include="Core\Dominio\Servico\RemoverDoEstoque.cs" />
+    <Compile Include="Core\Email.cs" />
     <Compile Include="Core\Endereco.cs" />
     <Compile Include="Core\Frete.cs" />
     <Compile Include="Core\IFormaDePagamento.cs" />
-    <Compile Include="Core\ItemPedido.cs" />
-    <Compile Include="Core\Pedido.cs" />
-    <Compile Include="Core\PessoaFisica.cs" />
-    <Compile Include="Core\PessoaJuridica.cs" />
-    <Compile Include="Core\Produto.cs" />
+    <Compile Include="Core\Dominio\Entidade\PessoaFisica.cs" />
+    <Compile Include="Core\Dominio\Entidade\PessoaJuridica.cs" />
+    <Compile Include="Core\Usuario.cs" />
     <Compile Include="Db\DbObject.cs" />
     <Compile Include="Db\IDataAccesObject.cs" />
     <Compile Include="Db\ProdutoDao.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Core\Promocao.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Core\Sexo.cs" />
+    <Compile Include="Core\Dominio\Entidade\Sexo.cs" />
     <Compile Include="Core\Telefone.cs" />
     <Compile Include="Core\TipoFrete.cs" />
     <Compile Include="Core\TipoTelefone.cs" />
@@ -111,6 +124,7 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

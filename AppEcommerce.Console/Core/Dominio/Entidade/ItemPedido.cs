@@ -8,6 +8,13 @@ namespace AppEcommerce.Model
 {
     public class ItemPedido
     {
+        public ItemPedido(Pedido pedido, Produto produto, int quantidade)
+        {
+            Pedido = pedido;
+            Produto = produto;
+            Quantidade = quantidade;
+        }
+
         public Pedido Pedido { get; set; }
         public Produto Produto { get; set; }
         public int Quantidade { get; set; }

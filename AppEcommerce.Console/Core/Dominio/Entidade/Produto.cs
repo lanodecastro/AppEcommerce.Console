@@ -13,6 +13,7 @@ namespace AppEcommerce.Model
         public double? Preco { get; set; }
         public double Peso { get; set; }
         public bool Disponivel { get; set; }
+        public int Quantidade { get; private set; }
 
         public Produto(string descricao,double preco,double peso)
         {
@@ -29,5 +30,14 @@ namespace AppEcommerce.Model
             this.Peso = peso;
             this.Disponivel = disponivel;
         }
+        public void AcrescerQuantidade(int quantidadeAserAcrescida)
+        {
+            Quantidade += quantidadeAserAcrescida;
+        }
+        public void DecrescerQuantidade(int quantidadeAserDecrescida)
+        {
+            Quantidade -= quantidadeAserDecrescida;
+        }
+
     }
 }

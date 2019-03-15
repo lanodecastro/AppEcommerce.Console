@@ -1,4 +1,5 @@
-﻿using AppEcommerce.Model.Enum;
+﻿using AppEcommerce.Console.Core;
+using AppEcommerce.Model.Enum;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,18 +11,15 @@ namespace AppEcommerce.Model
     public class Cliente
     {
         public int Id { get; set; }
-        public string Email { get; set; }
+        public Email Email { get; set; }
         public List<Telefone> Telefones { get; private set; }
 
         public Cliente(string email)
         {
-            this.Email = email;          
+            this.Email = new Email(email);          
             this.Telefones =new List<Telefone>();
         }
-        public Cliente()
-        {
-
-        }
+        
         public void AddTelefone(string numero, TipoTelefone tipoTelefone)
         {
             var telefone = new Telefone(0, numero, tipoTelefone, this);
@@ -32,5 +30,7 @@ namespace AppEcommerce.Model
         {
             Endereco endereco = new Endereco(logradouro, cep, bairro, cidade, uf, pais,this);
         }
+
+        
     }
 }
